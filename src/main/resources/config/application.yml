@@ -8,8 +8,7 @@ spring:
         git:
           uri: https://github.com/FredrickRichardG/cloud-config-server
 
-
-    application:
-      name: config-server
+  application:
+    name: config-server
 
 
