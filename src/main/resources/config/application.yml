@@ -7,18 +7,8 @@ spring:
       server:
         git:
           uri: https://github.com/FredrickRichardG/cloud-config-server
-          repos:
 
-            dev-properties-repo:
-              pattern: config-client/dev
-              uri: https://github.com/FredrickRichardG/cloud-config-server
-              search-paths:
-                - resources/config/{application}/{profile}
-
-            prod-properties-repo:
-              pattern : config-client/prod
-              uri: https://github.com/FredrickRichardG/cloud-config-server
-              search-paths:
-                - resources/config/{profile}
+    application:
+      name: config-client
 
 
