@@ -6,7 +6,23 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/FredrickRichardG/cloud-config-server/tree/main/src/main/resources/
+          uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+          repos:
+            staging-properties-repo:
+              pattern: config-client/staging
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo/{application}/{profile}
+
+            prod-properties-repo:
+              pattern: config-client/prod
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo/{profile}
+            any-properties-repo:
+              pattern: config-client*/*
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo
+
+
 
   application:
     name: config-server

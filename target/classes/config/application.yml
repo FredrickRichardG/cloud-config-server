@@ -6,19 +6,25 @@ spring:
     config:
       server:
         git:
-          uri: file:///C:/Users/fredrick.gnanaraj/training projects/Sprint 2/spring-config-cloud-server
+          uri: https://github.com/FredrickRichardG/cloud-config-server-setup
           repos:
-
-            dev-properties-repo:
-              pattern: config-client/dev
-              uri: file:///C:/Users/fredrick.gnanaraj/training projects/Sprint 2/spring-config-cloud-server
-              search-paths:
-                - resources/config/{application}/{profile}
+            staging-properties-repo:
+              pattern: config-client/staging
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo/{application}/{profile}
 
             prod-properties-repo:
-              pattern : config-client/prod
-              uri: file:///C:/Users/fredrick.gnanaraj/training projects/Sprint 2/spring-config-cloud-server
-              search-paths:
-                - resources/config/{profile}
+              pattern: config-client/prod
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo/{profile}
+            any-properties-repo:
+              pattern: config-client*/*
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo
+
+
+
+  application:
+    name: config-server
 
 
