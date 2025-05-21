@@ -6,18 +6,18 @@ spring:
     config:
       server:
         git:
-          uri: file:///C:/Users/fredrick.gnanaraj/training projects/Sprint 2/spring-config-cloud-server
+          uri: https://github.com/FredrickRichardG/cloud-config-server
           repos:
 
             dev-properties-repo:
               pattern: config-client/dev
-              uri: file:///C:/Users/fredrick.gnanaraj/training projects/Sprint 2/spring-config-cloud-server
+              uri: https://github.com/FredrickRichardG/cloud-config-server
               search-paths:
                 - resources/config/{application}/{profile}
 
             prod-properties-repo:
               pattern : config-client/prod
-              uri: file:///C:/Users/fredrick.gnanaraj/training projects/Sprint 2/spring-config-cloud-server
+              uri: https://github.com/FredrickRichardG/cloud-config-server
               search-paths:
                 - resources/config/{profile}
 
