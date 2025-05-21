@@ -1,0 +1,24 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///C:/Users/fredrick.gnanaraj/training projects/Sprint 2/spring-config-cloud-server
+          repos:
+
+            dev-properties-repo:
+              pattern: config-client/dev
+              uri: file:///C:/Users/fredrick.gnanaraj/training projects/Sprint 2/spring-config-cloud-server
+              search-paths:
+                - resources/config/{application}/{profile}
+
+            prod-properties-repo:
+              pattern : config-client/prod
+              uri: file:///C:/Users/fredrick.gnanaraj/training projects/Sprint 2/spring-config-cloud-server
+              search-paths:
+                - resources/config/{profile}
+
+
