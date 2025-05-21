@@ -1,2 +1,6 @@
-server:
-  port: 7070
+spring:
+  application:
+    name: config-client
+
+custom:
+  message: "Hello from config server!!!"
