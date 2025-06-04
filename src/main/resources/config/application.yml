@@ -13,12 +13,58 @@ spring:
               uri: https://github.com/FredrickRichardG/cloud-config-server-setup
               search-paths: config-repo/{application}/{profile}
 
+            staging-properties-user-repo:
+              pattern: user-service/staging
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo/{application}/{profile}
+
+            staging-properties-patient-repo:
+              pattern: patient-service/staging
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo/{application}/{profile}
+
+            staging-properties-sign-repo:
+              pattern: sign-service/staging
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo/{application}/{profile}
+
             prod-properties-repo:
               pattern: config-client/prod
               uri: https://github.com/FredrickRichardG/cloud-config-server-setup
               search-paths: config-repo/{profile}
-            any-properties-repo:
+
+            prod-properties-user-repo:
+              pattern: user-service/prod
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo/{profile}
+
+            prod-properties-patient-repo:
+              pattern: patient-service/prod
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo/{profile}
+
+            prod-properties-sign-repo:
+              pattern: sign-service/prod
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo/{profile}
+
+            any-config-client-properties-repo:
               pattern: config-client*/*
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo
+
+            any-user-service-properties-repo:
+              pattern: user-service*/*
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo
+
+            any-patient-service-properties-repo:
+              pattern: patient-service*/*
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo
+
+            any-sign-service-properties-repo:
+              pattern: sign-service*/*
               uri: https://github.com/FredrickRichardG/cloud-config-server-setup
               search-paths: config-repo
 
