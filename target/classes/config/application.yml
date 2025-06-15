@@ -28,6 +28,11 @@ spring:
               uri: https://github.com/FredrickRichardG/cloud-config-server-setup
               search-paths: config-repo/{application}/{profile}
 
+            staging-properties-consumer-repo:
+              pattern: consumer-service/staging
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo/{application}/{profile}
+
             prod-properties-repo:
               pattern: config-client/prod
               uri: https://github.com/FredrickRichardG/cloud-config-server-setup
@@ -40,6 +45,11 @@ spring:
 
             prod-properties-patient-repo:
               pattern: patient-service/prod
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo/{profile}
+
+            prod-properties-consumer-repo:
+              pattern: consumer-service/prod
               uri: https://github.com/FredrickRichardG/cloud-config-server-setup
               search-paths: config-repo/{profile}
 
@@ -65,6 +75,11 @@ spring:
 
             any-sign-service-properties-repo:
               pattern: sign-service*/*
+              uri: https://github.com/FredrickRichardG/cloud-config-server-setup
+              search-paths: config-repo
+
+            any-consumer-service-properties-repo:
+              pattern: consumer-service*/*
               uri: https://github.com/FredrickRichardG/cloud-config-server-setup
               search-paths: config-repo
 
